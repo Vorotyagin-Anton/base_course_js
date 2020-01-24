@@ -1,0 +1,119 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ДЗ-2</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script_hw2.js"></script>
+</head>
+<body>
+	<header class="header center">
+		<h1 class="header__head">Домашние задания по курсу "Базовый курс JavaScript"</h1>
+		<h3 class="header__name">Ученик: <a href="https://geekbrains.ru/users/3837254" class="header__linkName" target="_blank">Воротягин А.В.</a></h3>
+		<nav class="header__navigation">
+			<ul class="header__menu">
+				<li class="header__list"><a href="index_hw1.html" class="header__link header__link_exist">Урок 1</a></li>
+				<li class="header__list"><a href="hw2.html" class="header__link header__link_active header__link_exist">Урок 2</a></li>
+				<li class="header__list"><a href="#" class="header__link">Урок 3</a></li>
+				<li class="header__list"><a href="#" class="header__link">Урок 4</a></li>
+				<li class="header__list"><a href="#" class="header__link">Урок 5</a></li>
+				<li class="header__list"><a href="#" class="header__link">Урок 6</a></li>
+				<li class="header__list"><a href="#" class="header__link">Урок 7</a></li>
+				<li class="header__list"><a href="#" class="header__link">Урок 8</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="main center">
+		<h1 class="main__lesson">--- Урок 2 ---</h1>
+		<div class="line"></div>
+		<h1 class="main__head">Задание №1</h1>
+		<p class="main__text main__text_hw2">Ответ: операторы инкремент и декремент в префиксной форме (++a) увеличивают переменную и сразу возвращают новое значение (увеличенное/уменьшенное на 1), а в постфиксной форме (b++) - также увеличивают/уменьшают на 1 саму переменную, но сразу возвращают старое значение.</p>
+		<div class="line"></div>
+
+		<h1 class="main__head">Задание №2</h1>
+		<p class="main__text">Чему будет равен x в примере: var a = 2; var x = 1 + (a *= 2);</p>
+		<div class="main__tempF">
+			<p class="main__text">x = (<a href="#" class="main__action" onclick="task2()">Нажмите, чтобы узнать</a>) :</p>
+			<p class="main__output" id="task2-2result"></p>
+		</div>
+		<div class="line"></div>
+
+		<h1 class="main__head">Задание №3</h1>
+		<p class="main__text">Задайте переменную "a" (целочисленная)</p>
+		<input type="text" class="main__input" id="varA" placeholder="По умолчанию a = 0">
+		<p class="main__text">Задайте переменную "b" (целочисленная)</p>
+		<input type="text" class="main__input" id="varB" placeholder="По умолчанию b = 0">
+		<p class="main__text main__text_hw2">Если a и b положительные, будет вычислена их разность (a - b);<br>Если а и b отрицательные, будет вычислено их произведение (a * b);<br>Если а и b разных знаков, будет вычислена их сумма (a + b);<br>Ноль считаем положительным числом.</p>
+		<div class="main__tempF">
+			<p class="main__text">Результат вычисления (<a href="#" class="main__action" onclick="task3()">Вычислить</a>) :</p>
+			<p class="main__output" id="task2-3result"></p>
+		</div>
+		<div class="line"></div>
+
+		<h1 class="main__head">Задание №4</h1>
+		<p class="main__text">Задайте переменную "a" (от 0 до 5)</p>
+		<input type="text" class="main__input" id="varA-task4" placeholder="По умолчанию a = 0">
+		<div class="main__tempF main__tempF_hw2">
+			<p class="main__text">Вывести числа от "a" до "5" ? (<a href="#" class="main__action" onclick="task4()">Да</a>)</p>
+			<p class="main__output" id="task2-4result"></p>
+		</div>
+		<div class="line"></div>
+
+		<h1 class="main__head">Задание №5</h1>
+		<p class="main__text">Задайте переменную "a"</p>
+		<input type="text" class="main__input" id="varA-task5" placeholder="По умолчанию a = 0">
+		<p class="main__text">Задайте переменную "b"</p>
+		<input type="text" class="main__input" id="varB-task5" placeholder="По умолчанию b = 0">
+		<div class="main__tempF">
+			<p class="main__text">Сумма чисел (a + b):</p>
+			<p class="main__output" id="task2-5sum"></p>
+		</div>
+		<div class="main__tempF">
+			<p class="main__text">Разность чисел (a - b):</p>
+			<p class="main__output" id="task2-5dif"></p>
+		</div>
+		<div class="main__tempF">
+			<p class="main__text">Произведение чисел (a * b):</p>
+			<p class="main__output" id="task2-5prod"></p>
+		</div>
+		<div class="main__tempF">
+			<p class="main__text">Частное чисел (a / b):</p>
+			<p class="main__output" id="task2-5quot"></p>
+		</div>
+		<a href="#" class="main__action main__alert main__alert_hw2" onclick="task5()">Вычислить</a>
+		<div class="line"></div>
+
+		<h1 class="main__head">Задание №6</h1>
+		<p class="main__text">Задайте переменную "a"</p>
+		<input type="text" class="main__input" id="varArg1" placeholder="По умолчанию a = 0">
+		<p class="main__text">Задайте переменную "b"</p>
+		<input type="text" class="main__input" id="varArg2" placeholder="По умолчанию b = 0">
+		<p class="main__text main__text_hw2Center">Напишите что сделать с этими переменными (сложить, вычесть, умножить, разделить):</p>
+		<input type="text" class="main__input main__input_hw2" id="operation" placeholder="сложить, вычесть, умножить, разделить">
+		<div class="main__tempF main__tempF_hw2">
+			<p class="main__text">Результат выполнения операции:</p>
+			<p class="main__output" id="task2-6output"></p>
+		</div>
+		<a href="#" class="main__action main__alert main__alert_hw2" onclick="task6()">Вычислить</a>
+		<div class="line"></div>
+
+		<h1 class="main__head">Задание №7*</h1>
+		<p class="main__text main__text_hw2">"null" не больше, не меньше и не равен "0". Это данные разных типов. "null" - это "object", а "0" - это "number".</p>
+		<div class="line"></div>
+
+		<h1 class="main__head">Задание №8*</h1>
+		<p class="main__text">Задайте основание степени</p>
+		<input type="text" class="main__input" id="degBasis" placeholder="По умолчанию: 0">
+		<p class="main__text">Задайте целочисленный показатель степени</p>
+		<input type="text" class="main__input" id="exponent" placeholder="По умолчанию: 0">
+		<div class="main__tempF">
+			<p class="main__text">Результат возведения в степень (<a href="#" class="main__action" onclick="task8()">Вычислить</a>) :</p>
+			<p class="main__output" id="task2-8result"></p>
+		</div>
+		<div class="line"></div>
+		<div class="margin"></div>
+	</section>
+	<footer class="footer center">
+		<p class="footer__text">Ученик <a href="https://geekbrains.ru" class="footer__link" target="_blank">GeekBrains</a> - <a href="https://geekbrains.ru/users/3837254" class="footer__link" target="_blank">Воротягин Антон Вячеславович</a> &copy; 2020</p>
+	</footer>
+</body>
+</html>
