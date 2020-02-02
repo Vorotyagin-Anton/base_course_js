@@ -35,6 +35,22 @@ function countBasketPrice(arrayOfGoods) {
 
 countBasketPrice(basket);
 
+function countBasketPrice2(arrayOfGoods) {
+
+		function forReduce(sum, current) {
+
+			return sum + current[1]; 
+
+		}
+
+		let result = arrayOfGoods.reduce(forReduce, 0);
+
+		console.log(result);
+
+}
+
+countBasketPrice2(basket);
+
 // Задание №3
 
 for (let i = 0; i < 10; console.log(i++)){}
